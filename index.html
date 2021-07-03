@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+   
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/style-main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <style>
+
+/* Profile Section */
+#profile {
+	background: purple;
+	background-image: url(images/header-shadow.png);
+	background-position: center bottom;
+	background-repeat: repeat-x;
+	overflow: hidden;
+}
+
+/* About */
+.about {
+	float: left;
+	margin-top: 30px;
+	width: 490px;
+	margin-left: 20px;
+}
+
+.about .photo-inner {
+  float: left;
+  background: url(images/photo-inner.png) no-repeat;
+  width: 214px;
+  height: 212px;
+  padding: 12px 0 0 19px;
+}
+
+.about .photo-inner img {
+	background-color: #FFF;
+}
+
+.about h1 {
+	font-weight: 900;
+	color: #FFF;
+	line-height: 34px;
+	margin-top: 8px;
+}
+
+.about h3 {
+	margin-top: 5px;
+	font-size: 18px;
+	color: #FFF;
+	line-height: 18px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h3.main-heading .now {
+  background: #cf455c !important;
+}
+
+.about p {
+	font-size: 14px;
+	margin-top: 15px;
+	color:#fff;
+	font-weight: 400;
+	line-height: 24px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Personal info */
+
+.personal-info {
+  float: left;
+  margin-top: 30px;
+  width: 310px;
+  min-height: 230px;
+  margin-left: 10px;
+  background: url(images/personal-info-sep.png) no-repeat left top;
+  padding: 20px 0 19px 20px;
+}
+
+span.word-wrap a {
+    color: #fff;
+}
+
+.personal-info li {
+  line-height: 12px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  float: left;
+  width: 293px;
+}
+
+.personal-info li label {
+	color:#fff;
+	float: left;
+	padding: 4px 7px;
+	font-weight: 550;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.personal-info li span {
+	float: right;
+	width: 220px;
+	padding-top: 4px;
+	font-weight: 400;
+	color:#fff;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+}
+               
+/* Resume Section */
+
+#resume {
+  padding: 0px 0px;
+  overflow: hidden;
+}
+
+.skills-section, .timeline-section {
+	float: left;
+}
+
+.social a{
+  color: #cf455c;
+}
+.social a:hover {
+  color: blue!important;
+}
+
+/* Timeline Section */
+
+.timeline-section {
+  width: 100%;
+}
+
+.timeline {
+	margin-bottom: 30px;
+}
+
+.timeline li {
+	margin-bottom: 20px;
+}
+
+.timeline li .timelineUnit {
+	line-height: 17px;
+	margin-left: 0px;
+	color: #444;
+	font-size: 13px;
+	border-left: 1px solid #cf455c;
+	padding-left: 15px;
+}
+
+.timeline li .timelineUnit .timelineDate {
+	line-height: 17px;
+	color:#cf455c;
+	font-size: 14px;
+	margin-left: 10px;
+	font-weight: normal;
+	padding: 2px 6px;
+	float: right;
+}
+
+.timeline li .timelineUnit h4 {
+	line-height: 24px;
+	font-size: 15px;
+	color: #444;     
+}
+
+.timeline li .timelineUnit h5 {
+	line-height: 18px;
+	font-size: 13px;
+	color: #999;
+}
+
+.timeline li .timelineUnit p {
+	color: #666;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+/* Skills Section */
+
+.skills-section {
+	width: 270px;
+}
+
+.skills {
+	margin-bottom: 25px;
+	overflow: hidden;
+}
+
+.skills li {
+	margin-bottom: 15px;
+	float: left;
+	padding-left: 0px;
+}
+
+.skills li h4 {
+	width: 140px;
+	float: left;
+	font-size: 15px;
+	color: #444;
+}
+
+.skills li .rating {
+	width: 123px;
+	height: 14px;
+	float: left;
+}
+
+.skills li .rating > span {
+	opacity: 0.3;
+	height: 12px;
+	width: 12px;
+	background-color: #cf455c;
+	display: block;
+	float: left;
+	margin-right: 1px;
+	border: 2px solid #eeeeee;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+/* Download Button */
+
+#resume .button {
+	width: 250px;
+	padding: 10px;
+	background-color: #cf455c;
+	overflow: hidden;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 20px;
+	margin: 20px 0px 0px -20px;
+	color: #fff;
+	display: block;
+	text-align: center;
+	-webkit-border-radius: 0px 4px 4px 0px;
+	-moz-border-radius: 0px 4px 4px 0px;
+	border-radius: 0px 4px 4px 0px;
+}
+
+#resume .button:hover {
+	background-color:#cf455c;
+}
+        
+/* Portfolio Section */
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  width: 572px;
+  max-width: 100%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.close {
+    opacity: .7;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff!important;
+}
+
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The Close Button */
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the next button to the right */
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover */
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text */
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#portfolio {
+	padding: 20px 20px 20px 20px;
+}
+
+/* Images list */
+
+#portfolio-list {
+	width: 820px;
+	overflow: hidden;
+}
+
+#portfolio-list li {
+	float: left;
+	margin-right: 25px;
+	text-align: center;
+	background-color: #fbfbfb;
+	border-bottom: 1px solid #e5e5e5;
+	height: 185px;
+	margin-bottom: 30px;
+	width: 180px;
+}
+
+#portfolio-list li:hover {
+	border-bottom: 1px solid #cf455c;
+	height: 185px;
+}
+
+#portfolio-list img {
+	background-color: #FFF;
+	height: 120px;
+	width: 180px;
+}
+
+#portfolio-list li:hover .title {
+	color:#cf455c;
+}
+
+#portfolio-list li .title {
+	font-size: 14px;
+	margin-top: 15px;
+	font-weight: 400;
+	color: #3A3A3A;
+}
+
+#portfolio-list li .categorie {
+	font-size: 11px;
+	line-height: 25px;
+	color: #999;
+}
+
+/* Filter menu */
+
+.cats-filter {
+	border-bottom: 1px solid #ededed;
+	overflow: hidden;
+	padding: 15px 0;
+}
+
+.cats-filter li a {
+	float: left;
+	margin-right: 7px;
+	color: #fff;
+	background-color: #666;
+	padding: 10px 10px;
+	margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: 'Roboto Condensed', sans-serif;
+  border-radius: 50px;
+}
+
+.cats-filter li a:hover {
+	background-color:#cf455c;
+  text-decoration: none;
+}
+
+.cats-filter li a.current {
+	background-color:#cf455c;
+}
+
+/* Contact Section */
+
+#contact {	 
+	overflow: hidden;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.contact-info, .contact-form {
+	float: left;
+	padding: 0 20px;
+}
+
+.contact-info {
+	width: 250px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.contact-form {
+	width: 530px;
+}
+
+/* Contact info */
+
+.contact-info ul {
+	float: left;
+	border-left: 1px solid #cf455c;
+	padding-left: 18px;
+    
+}
+
+.contact-info ul li {
+	font-size: 13px;
+	line-height: 20px;
+	color: #666;
+	overflow: hidden;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Google map */
+
+#map {
+  height: 300px;
+  margin-bottom: 25px;
+  width: 100%;
+  border-bottom: 1px solid #CCC;
+  border-top: 1px solid #CCC;
+  width:100%;
+}
+
+#map iframe {
+  width: 100%;
+}
+
+/* Forms */
+
+form .input, form textarea {
+  -moz-box-shadow: inset 0 5px 16px -13px #333;
+  background-color: #FDFDFD;
+  border: 1px solid #ced4da;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  color: #666;
+  font-size: 12px;
+  height: 30px;
+  outline: none;
+  padding: 6px 10px;
+  resize: none;
+  width: 96%;
+}
+
+form textarea {
+	height: 112px;
+	line-height: 18px;
+	margin-bottom: 0;
+	padding-top: 8px;
+}
+
+form p {
+	margin-bottom: 15px;
+}
+
+form p label {
+	display: block;
+	color: #999;
+	margin-bottom: 8px;
+	font-size: 13px;
+}
+
+.button {
+	color: #fff;
+	background-color: #cf455c;
+	padding: 8px;
+	border: none;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	cursor: pointer;
+	font-size: 13px;
+}
+
+.button:hover {
+	background-color:#cf455c;
+}
+
+footer{
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+</style>
+</head>
+
+<body>
+<br><br>
+<section id="container">
+
+  <header> 
+    <div id="logo">
+      <h2>SRIJAN RASTOGI</h2>
+      <h4>PYTHON PROGRAMMER & WEB DEVELOPER</h4>
+    </div>
+  </header>
+
+  <section id="content">
+    <div id="profile"> 
+    	<div class="about">
+        	<div class="photo-inner">
+            <ul>
+              <li><img src="images/srijan.jpg" height="186" width="153" /></li>
+              <li><img src="images/shadow.png" height="186" width="153" /></li>
+            </ul>
+          </div>
+
+        <h1>SRIJAN RASTOGI</h1>
+        <h3>PYTHON PROGRAMMER & WEB DEVELOPER</h3>
+        <br>
+        <p>I like to make cool designs. I also love to make creative projects using Python language.<br /> Feel free to take a look around my Vcard.</p>
+      </div>
+
+    <ul class="personal-info">
+		  <li><label>Name</label><span>Srijan Rastogi</span></li>
+      <li><label>Birthday</label><span>February 27, 2000</span></li>
+      <li><label>Address</label><span>470/6 Shastri Nagar, Meerut, UP</span></li>
+      <li><label>Email</label><span class="word-wrap">srastogi751@gmail.com</span></li>
+      <li><label>Phone</label><span>9412144208</span></li>
+      <li><label>Website</label><span class="word-wrap"><a href="#">srastogi751.lovestoblog.com</a></span></li>
+    </ul>
+  </div>
+
+  <nav class="menu">
+  	<ul class="tabs">
+      <li class="tmenu"><a href="#profile" class="tab-profile"><i><i class="fa fa-user" aria-hidden="true"></i></i>Profile</a></li>
+      <li class="tmenu"><a href="#resume"><i><i class="fa fa-wpexplorer" aria-hidden="true"></i></i>Resume</a></li>
+      <li class="tmenu"><a href="#portfolio"><i><i class="fa fa-eercast" aria-hidden="true"></i></i>Portfolio</a></li>
+      <li class="tmenu"><a href="#contact"><i><i class="fa fa-telegram" aria-hidden="true"></i></i>Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="resume">
+    <div class="timeline-section">
+      <div class="main-wrapper-resume">
+        <div class="carttitle-wrapper">
+          <div class="color-box">
+		        <button id="red-color" class="btn-style"></button>
+            <button id="yellow-color" class="btn-style"></button>
+            <button id="blue-color" class="btn-style"></button>
+            <button id="green-color" class="btn-style"></button>
+		        <button class="setting-icon "><i class="fa fa-cog fa-spin" aria-hidden="true"></i></button>
+          </div>
+          <div class="container no-padding">
+            <div class="row no-margin">
+              <div class="col-md-6 no-padding bg-color-left">
+                <div class="left-name bg-color-1">
+                  <h2>Srijan<span class="text-color">Rastogi</span></h2>
+                  <h5>Software Programmer</h5>
+                  <p>I am a driven person with the ability of adapting any situation and potential to grow self as well as others.</p>
+                </div>
+                <div class="left-address">
+                  <ul>
+                    <li><span class="text-color">PHONE NO</span>9412144208</li>
+                    <li><span class="text-color">ADDRESS</span>470/6 Shastri Nagar, Meerut, UP</li>
+                    <li><span class="text-color">EMAIL</span>srastogi751@gmail.com</li>
+                  </ul>
+                </div>
+                <div class="ex-heading loader">
+                  <h2>EXPERIENCE</h2>
+                </div>
+                <div class="ex-box">
+                  <h2>NOV'18-DEC'18</h2>
+                  <h4>STUDENT AMBASSADOR</h4>
+                  <p>Marketing Internship at MYRA, managed a team of 10 interns to achieve greater heights.</p>
+                </div>
+                <div class="ex-box">
+                  <h2>2020-21</h2>
+                  <h4>JOINT SECRETARY</h4>
+                  <p>Treasurer at college departmental club, organised & coordinated many events for Extreme Team.</p>
+                </div>
+                <div class="ex-box">
+                  <h2>Jul'21</h2>
+                  <h4>DATA SCEINCE & BUSINESS ANALYTICS</h4>
+                  <p>Internship at The Sparks Foundation, worked on Jupyter IDE and completed multiple tasks.</p>
+                </div>
+                <div class="ex-heading loader">
+                  <br />
+                  <h2>CERTIFICATIONS</h2>
+                </div>
+                <div class="ex-box">
+                  <h2>Jun'20</h2>
+                  <h4>PYTHON3 PROGRAMMING SPECIALIZATION</h4>
+                  <p>Completed the course from University of Michigan through Coursera.</p>
+                </div>
+                <div class="ex-box">
+                  <h2>Jul'20</h2>
+                  <h4>REST API</h4>
+                  <p>Certified by HackerRank for intermediate level assessment.</p>
+                </div>
+                <div class="ex-box">
+                  <h2>Jul'20</h2>
+                  <h4>PYTHON FOR EVERYBODY SPECIALIZATION</h4>
+                  <p>Completed the course from University of Michigan through Coursera.</p>
+                </div>
+                <div class="ex-box">
+                  <h2>Jul'21</h2>
+                  <h4>JR. SOFTWARE DEVELOPER</h4>
+                  <p>Completed the course from DELL and America India Foundation.</p>
+                </div>
+              </div>
+              <div class="col-md-6 no-padding bg-color-right">
+                <div class="top-skills">
+                  <div class="skill-name">
+                    <div class="sn">PY3</div>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                  </div>
+                  <div class="skill-name">
+                    <div class="sn">C++</div>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                  </div>
+                  <div class="skill-name">
+                    <div class="sn">SQL</div>
+                    <ul>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </div>
+                  <div class="skill-name">
+                    <div class="sn">WEB</div>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="right-skills">
+                  <div class="row no-margin">
+                    <div class="col-md-12 heading-skills no-padding">
+                      <h3>MY SKILLS</h3>
+                    </div>
+                  </div>
+                  <div class="row no-margin">
+                    <div class="col-md-5 no-padding">
+                      <h4>PYTHON</h4>
+                    </div>
+                    <div class="col-md-7 no-padding">
+                      <div class="progress">
+                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-margin">
+                    <div class="col-md-5 no-padding">
+                      <h4>C++</h4>
+                    </div>
+                    <div class="col-md-7 no-padding">
+                      <div class="progress">
+                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-margin">
+                    <div class="col-md-5 no-padding">
+                      <h4>HTML & CSS</h4>
+                    </div>
+                    <div class="col-md-7 no-padding">
+                      <div class="progress">
+                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-margin">
+                    <div class="col-md-5 no-padding">
+                      <h4>BOOTSTRAP</h4>
+                    </div>
+                    <div class="col-md-7 no-padding">
+                      <div class="progress">
+                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-margin mt-25">
+                    <div class="col-md-5 no-padding">
+                      <h4>JAVA</h4>
+                    </div>
+                    <div class="col-md-7 no-padding">
+                      <div class="progress">
+                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-margin">
+                    <div class="col-md-5 no-padding">
+                      <h4>SQL</h4>
+                    </div>
+                    <div class="col-md-7 no-padding">
+                      <div class="progress">
+                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-margin">
+                    <div class="col-md-5 no-padding">
+                      <h4>CLOUD COMPUTING</h4>
+                    </div>
+                    <div class="col-md-7 no-padding">
+                      <div class="progress">
+                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-margin">
+                    <div class="col-md-5 no-padding">
+                      <h4>ADOBE PHOTOSHOP</h4>
+                    </div>
+                    <div class="col-md-7 no-padding">
+                      <div class="progress">
+                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-margin mt-25">
+                    <div class="col-md-12 heading-skills no-padding">
+                      <h3>INTERESTS</h3>
+                    </div>
+                    <div class="col-md-4 intetst-box">
+                      <div class="intetst-icons">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        <br><br>
+                        <h5>TRAVEL</h5>
+                      </div>
+                    </div>
+                    <div class="col-md-4 intetst-box">
+                      <div class="intetst-icons">
+                        <i class="fa fa-headphones" aria-hidden="true"></i>
+                        <br><br>
+                        <h5>MUSIC</h5>
+                      </div>
+                    </div>
+                    <div class="col-md-4 intetst-box">
+                      <div class="intetst-icons">
+                        <i class="fa fa-file-video-o" aria-hidden="true"></i>
+                        <br><br>
+                        <h5>WEB SERIES</h5>
+                      </div>
+                    </div>
+                    <div class="col-md-4 intetst-box">
+                      <div class="intetst-icons">
+                        <i class="fa fa-bicycle" aria-hidden="true"></i>
+                        <br><br>
+                        <h5>CYCLING</h5>
+                      </div>
+                    </div>
+                    <div class="col-md-4 intetst-box">
+                      <div class="intetst-icons">
+                        <i class="fa fa-cutlery" aria-hidden="true"></i>
+                        <br><br>
+                        <h5>COOKING</h5>
+                      </div>
+                    </div>
+                    <div class="col-md-4 intetst-box">
+                      <div class="intetst-icons">
+                        <i class="fa fa-soccer-ball-o" aria-hidden="true"></i>
+                        <br><br>
+                        <h5>SPORTS</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="eduction-right">
+                  <div class="row no-margin">
+                    <div class="col-md-12 heading-skills no-padding">
+                      <h3>EDUCATION</h3>
+                      <div class="ex-box">
+                      <h2>2016-17</h2>
+                      <h4>SENIOR SECONDARY</h4>
+                      <p>Dayawati Modi Academy-I, Modipuram<br />CBSE Board<br />Percentage: 74.6%</p>
+                      </div>
+                    </div>
+                    <div class="col-md-12 heading-skills no-padding">
+                      <div class="ex-box">
+                        <h2>2018-22</h2>
+                        <h4>B.TECH (CSE)</h4>
+                        <p>Galgotias College Of Engineering & Technology<br />Greater Noida<br />SGPA (Till 5th Sem): 7.1</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="address-qr-right">
+                  <div class="row no-margin">
+                    <div class="col-md-5 no-padding">
+                      <div class="qr-box">
+                        <img src="images/qrcode.png">
+                      </div>
+                      <div class="social">
+                      <br /> <br />
+                      <a href="https://www.hackerrank.com/insomniac751" target="_blank">HackerRank: @insomniac751</a>
+                      <br /> <br />
+                      <a href="https://github.com/srijan-27" target="_blank">GitHub: @srijan-27</a>
+                      <br /> <br />
+                      <a href="https://twitter.com/srastogi27" target="_blank">Twitter: @srastogi27</a>
+                      </div>
+                    </div>
+                    <div class="col-md-7 no-padding">
+                      <div class="address-right-box">
+                        <ul>
+                          <li><i class="fa fa-phone-square" aria-hidden="true"></i>
+                          <p>9412144208</p></li>
+                          <li><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                          <p>srastogi751@gmail.com</p></li>
+                          <li><i class="fa fa-map-marker" aria-hidden="true"></i>
+                          <p>470/6 Shastri Nagar Meerut Uttar Pradesh India 250004.</p></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+	    </div>
+    </section>
+
+
+    <section id="portfolio">
+      <ul class="cats-filter" id="portfolio-filter">
+        <li><a href="" class="current transition" data-filter="*">All</a></li>
+        <li><a href="" class="transition" data-filter=".webdesign">Web Designs</a></li>
+        <li><a href="" class="transition" data-filter=".pythonProjects">Python Projects</a></li>
+        <li><a href="" class="transition" data-filter=".cppProjects">C++ Projects</a></li>
+        <li><a href="" class="transition" data-filter=".photoshop">Photoshop</a></li>
+        <li><a href="" class="transition" data-filter=".blablabla">BLABLABLA</a></li>
+      </ul>
+      <div class="extra-text">My works which makes you just WOW!</div>
+        <ul id="portfolio-list">
+          <li class="pythonProjects">
+            <a href="images/geodata.jpg" class="folio">
+            <img src="images/geodata.jpg" alt="">
+            <h2 class="title">Geo Data</h2>
+            <span class="categorie">Python / API</span>
+            </a>
+			   	</li>
+          <li class="webdesign">
+            <a href="images/portfolio.jpg" class="folio">
+            <img src="images/portfolio.jpg" alt="">
+            <h2 class="title">Portfolio</h2>
+            <span class="categorie">Web Design</span> 
+            </a>
+         	</li>                        
+          <li class="webdesign pythonProjects">
+            <a href="images/covid.jpg" class="folio">
+            <img src="images/covid.jpg" alt="">                            
+            <h2 class="title">Covid-19 Tracker</h2>
+            <span class="categorie">Web Design / Python</span> 
+            </a>
+         	</li>
+          <li class="cppProjects">
+            <a href="images/lms-2.jpg" class="folio">
+            <img src="images/lms-2.jpg" alt="">
+            <h2 class="title">Library Management System</h2>
+            <span class="categorie">C++</span> 
+            </a>
+          </li>
+          <li class="photoshop">
+            <a href="images/darpanXIV.jpg" class="folio">
+            <img src="images/darpanXIV.jpg" alt="">
+            <a href="images/darpanXIII.jpg" class="folio">
+            <img src="images/darpanXIII.jpg" alt="">
+            <h2 class="title">Extreme Newsletter</h2>
+            <span class="categorie">Photoshop</span> 
+            </a>
+         	</li>
+          <li class="">
+            <a href="images/" class="folio">
+            <img src="images/" alt="">
+            <h2 class="title"></h2>
+            <span class="categorie"></span> 
+            </a>
+          </li>
+          <li class="photoghraphy">
+            <a href="images/2.jpg" class="folio">
+            <img src="images/7-thumb.jpg" alt="">
+            <h2 class="title"></h2>
+            <span class="categorie"></span> 
+            </a>
+         	</li>
+          <li class="illustration">
+            <a href="images/7.jpg" class="folio">
+            <img src="images/8-thumb.jpg" alt="">
+            <h2 class="title"></h2>
+            <span class="categorie"></span> 
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section id="contact">
+      	<div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d218.17550360099182!2d77.7332551942258!3d28.963417056425794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c64ba0433c771%3A0xa18b1c15ff213f4a!2zMjjCsDU3JzQ4LjkiTiA3N8KwNDQnMDAuMSJF!5e0!3m2!1sen!2sin!4v1621448480828!5m2!1sen!2sin" width="300" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+          <div class="contact-info">
+            <h3 class="main-heading"><span>Contact info</span></h3>
+            <ul>
+              <li>470/6 Shastri Nagar, <br />Meerut, UP<br /><br /></li>
+              <li>EMAIL: srastogi751@gmail.com</li>
+              <li>PHONE: 9412144208</li>
+              <li>WEBSITE: srastogi751.lovestoblog.com</li>
+            </ul>
+          </div>
+          <div class="contact-form">
+            <h3 class="main-heading"><span>Let's keep in touch</span></h3>
+            <div id="contact-status"></div>
+              <form action="https://formsubmit.co/srastogi751@gmail.com" method="POST" id="contactform" enctype="multipart/form-data">
+              <p>
+					  <div class="form-group">
+              <input type="text" id="name" name="Name" class="form-control" required>
+						  <label class="form-control-placeholder" for="name">Your Name</label>
+					  </div>
+              </p>
+              <p>
+					  <div class="form-group">
+						  <input type="email" id="email" name="Email" class="form-control" required>
+						  <label class="form-control-placeholder" for="email">Your Email</label>
+					  </div>
+              </p>
+              <p>
+            <div class="form-group">
+              <input type="file" id="file" name="Attachment" accept="image/png, image/jpeg" class="form-control">
+            </div>
+              </p>
+              <p>
+            	<label for="message">Your Message</label>
+              <textarea name="Message" cols="88" rows="6" class="textarea" ></textarea>
+              </p>
+              <input type="submit" id="submit" value="Send your message" class="button transition">
+
+              <input type="hidden" name="_subject" value="New Form Submission!">
+              <input type="hidden" name="_next" value="http://srastogi751.lovestoblog.com/">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+
+              </form>
+              <br><br><br><br>
+          </div>
+        </section>
+    </section>
+    <footer>
+    	<div class="copyright">Copyright &copy; 2021 Srijan Rastogi</div>
+    </footer>
+
+	<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  </div>
+</section>
+    
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easytabs/3.2.0/jquery.easytabs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.caroufredsel/6.1.0/jquery.carouFredSel.packed.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+$(document).ready(function() {
+  $("#portfolio").magnificPopup ({
+    delegate: 'a',
+    type:'image',
+    gallery: {
+      enabled: true
+    }
+  });
+});
+</script>
+
+</body>
+</html>
